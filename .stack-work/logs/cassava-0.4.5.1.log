@@ -1,0 +1,16 @@
+Configuring cassava-0.4.5.1...
+Building cassava-0.4.5.1...
+Preprocessing library cassava-0.4.5.1...
+[ 1 of 10] Compiling Data.Csv.Util    ( Data\Csv\Util.hs, .stack-work\dist\ca59d0ab\build\Data\Csv\Util.o )
+[ 2 of 10] Compiling Data.Csv.Types   ( Data\Csv\Types.hs, .stack-work\dist\ca59d0ab\build\Data\Csv\Types.o )
+[ 3 of 10] Compiling Data.Csv.Parser  ( Data\Csv\Parser.hs, .stack-work\dist\ca59d0ab\build\Data\Csv\Parser.o )
+[ 4 of 10] Compiling Data.Csv.Conversion.Internal ( Data\Csv\Conversion\Internal.hs, .stack-work\dist\ca59d0ab\build\Data\Csv\Conversion\Internal.o )
+[ 5 of 10] Compiling Data.Csv.Conversion ( Data\Csv\Conversion.hs, .stack-work\dist\ca59d0ab\build\Data\Csv\Conversion.o )
+[ 6 of 10] Compiling Data.Csv.Encoding ( Data\Csv\Encoding.hs, .stack-work\dist\ca59d0ab\build\Data\Csv\Encoding.o )
+[ 7 of 10] Compiling Data.Csv.Incremental ( Data\Csv\Incremental.hs, .stack-work\dist\ca59d0ab\build\Data\Csv\Incremental.o )
+[ 8 of 10] Compiling Data.Csv.Streaming ( Data\Csv\Streaming.hs, .stack-work\dist\ca59d0ab\build\Data\Csv\Streaming.o )
+[ 9 of 10] Compiling Data.Csv.Builder ( Data\Csv\Builder.hs, .stack-work\dist\ca59d0ab\build\Data\Csv\Builder.o )
+[10 of 10] Compiling Data.Csv         ( Data\Csv.hs, .stack-work\dist\ca59d0ab\build\Data\Csv.o )
+Installing library in
+C:\sr\snapshots\3c4ad812\lib\x86_64-windows-ghc-8.0.2\cassava-0.4.5.1-xCAF6crISQBmzhqlWSzBS
+Registering cassava-0.4.5.1...

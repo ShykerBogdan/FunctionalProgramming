@@ -1,0 +1,1507 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-09 10:11:41.4041556 UTC
+
+interface lab05-0.1.0.0-F7mqI451Ssi8Ac6N0Oz1x2:Lib 8002
+  interface hash: b441289019addf45f7b9c174e913a7d9
+  ABI hash: a4736b3f6349ee182c90481c00896a4b
+  export-list hash: 5818fb17c374f4821949d39a209e1c7a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 9d523ce785342ae7db95d59d185aebfd
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.+++
+  Lib.getMeet
+  Lib.getNotebook
+  Lib.Date{Lib.Date}
+  Lib.DateWithTime{Lib.DateWithTime}
+  Lib.Day{Lib.Day}
+  Lib.Meet{Lib.Meet dateWithTime description isHappened meetingPoint}
+  Lib.Month{Lib.April Lib.August Lib.December Lib.February Lib.January Lib.July Lib.June Lib.March Lib.May Lib.November Lib.October Lib.September}
+  Lib.Notebook{Lib.Notebook}
+  Lib.People{Lib.People dateOfBirdth meets name phone}
+  Lib.Phone{Lib.Phone Lib.Phones phoneNumber phoneNumbers}
+  Lib.Time{Lib.Time}
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+1831ece90a5f44b2e48b6ba6efc037f7
+  $fEqDay :: GHC.Classes.Eq Lib.Day
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:. @ Lib.Day Lib.$fEqDay_$c== Lib.$fEqDay_$c/= -}
+1831ece90a5f44b2e48b6ba6efc037f7
+  $fEqDay_$c/= :: Lib.Day -> Lib.Day -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)),1*U(1*U(U))><S(S(S)),1*U(1*U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Lib.Day) (b :: Lib.Day) ->
+                 case a of wild { Lib.Day a1 ->
+                 case b of wild1 { Lib.Day b1 ->
+                 case a1 of wild2 { GHC.Types.I# x ->
+                 case b1 of wild3 { GHC.Types.I# y ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==# x y) of wild4 {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False } } } } }) -}
+1831ece90a5f44b2e48b6ba6efc037f7
+  $fEqDay_$c== :: Lib.Day -> Lib.Day -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)),1*U(1*U(U))><S(S(S)),1*U(1*U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Lib.Day) (ds1 :: Lib.Day) ->
+                 case ds of wild { Lib.Day a1 ->
+                 case ds1 of wild1 { Lib.Day b1 -> GHC.Classes.eqInt a1 b1 } }) -}
+5b54440f7762729edaf0166446baa7ff
+  $fShowDate :: GHC.Show.Show Lib.Date
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Date
+                  Lib.$fShowDate_$cshowsPrec
+                  Lib.$fShowDate_$cshow
+                  Lib.$fShowDate_$cshowList -}
+39f3bdeddd2bc20f2955a42dff62c448
+  $fShowDate1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "December"#) -}
+7c60a40e15358307953d5366442be9a5
+  $fShowDate10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "March"#) -}
+32a991227585b7fe4230b2b509df5f59
+  $fShowDate11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "February"#) -}
+ef4d93a6cc253db39a93c2fba4db43cf
+  $fShowDate12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "January"#) -}
+44011d33e94299dfc3b3d675161f91f7
+  $fShowDate2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "November"#) -}
+0ef35033518a0fe9217f8cc7108ee58d
+  $fShowDate3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "October"#) -}
+59e706c7a3b129f4de6cc6b3c03db0bb
+  $fShowDate4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "September"#) -}
+a8f6e3ee191a896c7cdbe2a4cc02f159
+  $fShowDate5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "August"#) -}
+fbd7c0efbb94f3e38362ab9e586fff69
+  $fShowDate6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "July"#) -}
+ebc109d62fc6eb1b954e375c0bcf9cba
+  $fShowDate7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "June"#) -}
+43bfd76e44fb295e1ac9adadeddef0c0
+  $fShowDate8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "May"#) -}
+ed20fbbb3df65fc3ba8a12fdedb8af14
+  $fShowDate9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "April"#) -}
+3b3e9fe18633a4e413e498989f66e42d
+  $fShowDateWithTime :: GHC.Show.Show Lib.DateWithTime
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.DateWithTime
+                  Lib.$fShowDateWithTime_$cshowsPrec
+                  Lib.$fShowDateWithTime_$cshow
+                  Lib.$fShowDateWithTime_$cshowList -}
+3b3e9fe18633a4e413e498989f66e42d
+  $fShowDateWithTime1 ::
+    Lib.DateWithTime -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (x :: Lib.DateWithTime)
+                   (s :: GHC.Base.String)[OneShot] ->
+                 case x of ww { Lib.DateWithTime ww1 ww2 ww3 ->
+                 case ww1 of ww4 { Lib.Day ww5 ->
+                 case ww5 of ww6 { GHC.Types.I# ww7 ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (Lib.$w$cshow1 ww7 ww2 ww3)
+                   s } } }) -}
+3b3e9fe18633a4e413e498989f66e42d
+  $fShowDateWithTime_$cshow :: Lib.DateWithTime -> GHC.Base.String
+  {- Arity: 1,
+     Strictness: <S(S(S(S))LL),1*U(1*U(1*U(U)),1*U,1*U(1*U(U),1*U(U)))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Lib.DateWithTime) ->
+                 case w of ww { Lib.DateWithTime ww1 ww2 ww3 ->
+                 case ww1 of ww4 { Lib.Day ww5 ->
+                 case ww5 of ww6 { GHC.Types.I# ww7 ->
+                 Lib.$w$cshow1 ww7 ww2 ww3 } } }) -}
+3b3e9fe18633a4e413e498989f66e42d
+  $fShowDateWithTime_$cshowList ::
+    [Lib.DateWithTime] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ls :: [Lib.DateWithTime]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Lib.DateWithTime
+                   Lib.$fShowDateWithTime1
+                   ls
+                   s) -}
+3b3e9fe18633a4e413e498989f66e42d
+  $fShowDateWithTime_$cshowsPrec ::
+    GHC.Types.Int -> Lib.DateWithTime -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <L,A><S(S(S(S))LL),1*U(1*U(1*U(U)),1*U,1*U(1*U(U),1*U(U)))><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (x :: Lib.DateWithTime)
+                   (s :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (Lib.$fShowDateWithTime_$cshow x))
+                   s) -}
+5b54440f7762729edaf0166446baa7ff
+  $fShowDate_$cshow :: Lib.Date -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(S(S(S))L),1*U(1*U(1*U(U)),1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Lib.Date) ->
+                 case w of ww { Lib.Date ww1 ww2 ->
+                 case ww1 of ww3 { Lib.Day ww4 ->
+                 case ww4 of ww5 { GHC.Types.I# ww6 ->
+                 Lib.$w$cshow ww6 ww2 } } }) -}
+5b54440f7762729edaf0166446baa7ff
+  $fShowDate_$cshowList :: [Lib.Date] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Lib.Date]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Lib.Date
+                   (Lib.$fShowDate_$cshowsPrec GHC.Show.shows22)
+                   ls
+                   s) -}
+5b54440f7762729edaf0166446baa7ff
+  $fShowDate_$cshowsPrec ::
+    GHC.Types.Int -> Lib.Date -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <L,A><S(S(S(S))L),1*U(1*U(1*U(U)),1*U)><L,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Lib.Date) (w2 :: GHC.Base.String) ->
+                 case w1 of ww { Lib.Date ww1 ww2 ->
+                 case ww1 of ww3 { Lib.Day ww4 ->
+                 case ww4 of ww5 { GHC.Types.I# ww6 ->
+                 Lib.$w$cshowsPrec ww6 ww2 w2 } } }) -}
+1831ece90a5f44b2e48b6ba6efc037f7
+  $fShowDay :: GHC.Show.Show Lib.Day
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Day
+                  Lib.$fShowDay_$cshowsPrec
+                  Lib.$fShowDay_$cshow
+                  Lib.$fShowDay_$cshowList -}
+1831ece90a5f44b2e48b6ba6efc037f7
+  $fShowDay1 :: Lib.Day -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ (x :: Lib.Day) (s :: GHC.Base.String)[OneShot] ->
+                 case x of wild { Lib.Day d ->
+                 case d of ww2 { GHC.Types.I# ww3 ->
+                 case GHC.Show.$wshowSignedInt
+                        0#
+                        ww3
+                        (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                   s } } }) -}
+1831ece90a5f44b2e48b6ba6efc037f7
+  $fShowDay_$cshow :: Lib.Day -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S(S)),1*U(1*U(U))>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Lib.Day) ->
+                 case ds of wild { Lib.Day d -> GHC.Show.$fShowInt_$cshow d }) -}
+1831ece90a5f44b2e48b6ba6efc037f7
+  $fShowDay_$cshowList :: [Lib.Day] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ls :: [Lib.Day]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Lib.Day Lib.$fShowDay1 ls s) -}
+1831ece90a5f44b2e48b6ba6efc037f7
+  $fShowDay_$cshowsPrec :: GHC.Types.Int -> Lib.Day -> GHC.Show.ShowS
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,A><S(S(S)),1*U(1*U(U))><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Lib.Day) (w2 :: GHC.Base.String) ->
+                 case w1 of ww { Lib.Day ww1 ->
+                 case ww1 of ww2 { GHC.Types.I# ww3 ->
+                 Lib.$w$cshowsPrec2 ww3 w2 } }) -}
+916c6dece3af605d9beb6fc220e6648a
+  $fShowMeet :: GHC.Show.Show Lib.Meet
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Meet
+                  Lib.$fShowMeet_$cshowsPrec
+                  Lib.$fShowMeet_$cshow
+                  Lib.$fShowMeet_$cshowList -}
+916c6dece3af605d9beb6fc220e6648a
+  $fShowMeet1 :: Lib.Meet -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (x :: Lib.Meet) (s :: GHC.Base.String)[OneShot] ->
+                 case x of ww { Lib.Meet ww1 ww2 ww3 ww4 ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (Lib.$w$cshow3 ww1 ww2 ww3 ww4)
+                   s }) -}
+0e6e9f9ae58bd6b3655d437833bbc2c2
+  $fShowMeet2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   GHC.Show.shows17
+                   Lib.$fShowMeet3) -}
+91dd305910d9e44e93729a4d1445cae6
+  $fShowMeet3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "\n\
+                   \\t"#) -}
+5c1084b16386ef79b3dc414392219fad
+  $fShowMeet4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   GHC.Show.shows18
+                   Lib.$fShowMeet3) -}
+b249c92248eaa9b7378681044512adaa
+  $fShowMeet5 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows6
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+916c6dece3af605d9beb6fc220e6648a
+  $fShowMeet_$cshow :: Lib.Meet -> GHC.Base.String
+  {- Arity: 1,
+     Strictness: <S,1*U(1*U(1*U(1*U(U)),1*U,1*U(1*U(U),1*U(U))),1*U,1*U,1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Lib.Meet) ->
+                 case w of ww { Lib.Meet ww1 ww2 ww3 ww4 ->
+                 Lib.$w$cshow3 ww1 ww2 ww3 ww4 }) -}
+916c6dece3af605d9beb6fc220e6648a
+  $fShowMeet_$cshowList :: [Lib.Meet] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ls :: [Lib.Meet]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Lib.Meet Lib.$fShowMeet1 ls s) -}
+916c6dece3af605d9beb6fc220e6648a
+  $fShowMeet_$cshowsPrec ::
+    GHC.Types.Int -> Lib.Meet -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <L,A><S,1*U(1*U(1*U(1*U(U)),1*U,1*U(1*U(U),1*U(U))),1*U,1*U,1*U)><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int) (x :: Lib.Meet) (s :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr @ GHC.Types.Char @ b c n (Lib.$fShowMeet_$cshow x))
+                   s) -}
+216455cb09710d73efa1cc70e09250b2
+  $fShowMonth :: GHC.Show.Show Lib.Month
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Month
+                  Lib.$fShowMonth_$cshowsPrec
+                  Lib.$fShowMonth_$cshow
+                  Lib.$fShowMonth_$cshowList -}
+216455cb09710d73efa1cc70e09250b2
+  $fShowMonth_$cshow :: Lib.Month -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Lib.Month) ->
+                 Lib.$fShowMonth_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+216455cb09710d73efa1cc70e09250b2
+  $fShowMonth_$cshowList :: [Lib.Month] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__ @ Lib.Month Lib.$w$cshowsPrec1) -}
+216455cb09710d73efa1cc70e09250b2
+  $fShowMonth_$cshowsPrec ::
+    GHC.Types.Int -> Lib.Month -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Lib.Month)
+                   (w2 :: GHC.Base.String) ->
+                 Lib.$w$cshowsPrec1 w1 w2) -}
+ebb3f905d1d21f9e47014cd1248f6c82
+  $fShowPeople :: GHC.Show.Show Lib.People
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.People
+                  Lib.$fShowPeople_$cshowsPrec
+                  Lib.$fShowPeople_$cshow
+                  Lib.$fShowPeople_$cshowList -}
+ebb3f905d1d21f9e47014cd1248f6c82
+  $fShowPeople1 :: Lib.People -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (x :: Lib.People) (s :: GHC.Base.String)[OneShot] ->
+                 case x of ww { Lib.People ww1 ww2 ww3 ww4 ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (Lib.$w$cshow4 ww1 ww2 ww3 ww4)
+                   s }) -}
+ebb3f905d1d21f9e47014cd1248f6c82
+  $fShowPeople_$cshow :: Lib.People -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U,1*U(1*U(1*U(U)),1*U),1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Lib.People) ->
+                 case w of ww { Lib.People ww1 ww2 ww3 ww4 ->
+                 Lib.$w$cshow4 ww1 ww2 ww3 ww4 }) -}
+ebb3f905d1d21f9e47014cd1248f6c82
+  $fShowPeople_$cshowList :: [Lib.People] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ls :: [Lib.People]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Lib.People Lib.$fShowPeople1 ls s) -}
+ebb3f905d1d21f9e47014cd1248f6c82
+  $fShowPeople_$cshowsPrec ::
+    GHC.Types.Int -> Lib.People -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <L,A><S,1*U(1*U,1*U,1*U(1*U(1*U(U)),1*U),1*U)><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (x :: Lib.People)
+                   (s :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (Lib.$fShowPeople_$cshow x))
+                   s) -}
+4e5b864411251a29ff62699db9009abb
+  $fShowPhone :: GHC.Show.Show Lib.Phone
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Phone
+                  Lib.$fShowPhone_$cshowsPrec
+                  Lib.$fShowPhone_$cshow
+                  Lib.$fShowPhone_$cshowList -}
+4e5b864411251a29ff62699db9009abb
+  $fShowPhone_$cshow :: Lib.Phone -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Lib.Phone) ->
+                 case ds of wild {
+                   Lib.Phone a
+                   -> GHC.CString.unpackAppendCString#
+                        "Phone: "#
+                        (GHC.Types.:
+                           @ GHC.Types.Char
+                           GHC.Show.shows6
+                           (GHC.Show.showLitString a Lib.$fShowMeet5))
+                   Lib.Phones a
+                   -> GHC.CString.unpackAppendCString#
+                        "Phones: "#
+                        (GHC.Show.showList__
+                           @ [GHC.Types.Char]
+                           GHC.Show.shows_$cshowList1
+                           a
+                           (GHC.Types.[] @ GHC.Types.Char)) }) -}
+4e5b864411251a29ff62699db9009abb
+  $fShowPhone_$cshowList :: [Lib.Phone] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Lib.Phone]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Lib.Phone
+                   (Lib.$fShowPhone_$cshowsPrec GHC.Show.shows22)
+                   ls
+                   s) -}
+4e5b864411251a29ff62699db9009abb
+  $fShowPhone_$cshowsPrec ::
+    GHC.Types.Int -> Lib.Phone -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Lib.Phone)
+                   (w2 :: GHC.Base.String) ->
+                 Lib.$w$cshowsPrec3 w1 w2) -}
+f21b365556730e474f104b592c6d9031
+  $fShowTime :: GHC.Show.Show Lib.Time
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Time
+                  Lib.$fShowTime_$cshowsPrec
+                  Lib.$fShowTime_$cshow
+                  Lib.$fShowTime_$cshowList -}
+f21b365556730e474f104b592c6d9031
+  $fShowTime1 :: Lib.Time -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ (x :: Lib.Time) (s :: GHC.Base.String)[OneShot] ->
+                 case x of ww { Lib.Time ww1 ww2 ->
+                 case ww1 of ww3 { GHC.Types.I# ww4 ->
+                 GHC.Base.++ @ GHC.Types.Char (Lib.$w$cshow2 ww4 ww2) s } }) -}
+f21b365556730e474f104b592c6d9031
+  $fShowTime_$cshow :: Lib.Time -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(S(S)L),1*U(1*U(U),1*U(U))>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Lib.Time) ->
+                 case w of ww { Lib.Time ww1 ww2 ->
+                 case ww1 of ww3 { GHC.Types.I# ww4 -> Lib.$w$cshow2 ww4 ww2 } }) -}
+f21b365556730e474f104b592c6d9031
+  $fShowTime_$cshowList :: [Lib.Time] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ls :: [Lib.Time]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Lib.Time Lib.$fShowTime1 ls s) -}
+f21b365556730e474f104b592c6d9031
+  $fShowTime_$cshowsPrec ::
+    GHC.Types.Int -> Lib.Time -> GHC.Show.ShowS
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,A><S(S(S)L),1*U(1*U(U),1*U(U))><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int) (x :: Lib.Time) (s :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr @ GHC.Types.Char @ b c n (Lib.$fShowTime_$cshow x))
+                   s) -}
+23277f8e9e425d900253903de2131b11
+  $s$dmshowList6 :: Lib.Date -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (w :: Lib.Date) (w1 :: GHC.Base.String)[OneShot] ->
+                 case w of ww { Lib.Date ww1 ww2 ->
+                 case ww1 of ww3 { Lib.Day ww4 ->
+                 case ww4 of ww5 { GHC.Types.I# ww6 ->
+                 Lib.$w$cshowsPrec ww6 ww2 w1 } } }) -}
+cb03546ada2511d3604f62900afc9e62
+  $tc'April :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12510862567174836512##
+                   14840603524127402030##
+                   Lib.$trModule
+                   Lib.$tc'April1) -}
+6d30fbbf11ac8a81810ee344895ce09f
+  $tc'April1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'April"#) -}
+cc1d2a77d038f2a5e5c09c2373da0473
+  $tc'August :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8161114871353885836##
+                   404890919543387798##
+                   Lib.$trModule
+                   Lib.$tc'August1) -}
+ca648f0c9c3b1e6743944fc4a011007d
+  $tc'August1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'August"#) -}
+d3f9b690f34834d212b9d0b5d0ad9c69
+  $tc'Date :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15329580311876229003##
+                   7150515317302986928##
+                   Lib.$trModule
+                   Lib.$tc'Date1) -}
+a0d66ebaf4384d32600b2d98f368b1b1
+  $tc'Date1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Date"#) -}
+d5dc3d0d7e09f5e7af1c4788431860d0
+  $tc'DateWithTime :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7425388502879433606##
+                   336243859899897857##
+                   Lib.$trModule
+                   Lib.$tc'DateWithTime1) -}
+cf733b7ec54183786358fd05fca9cb7d
+  $tc'DateWithTime1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'DateWithTime"#) -}
+97ae514a4187aefef422f8eca54fe0b9
+  $tc'Day :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9460703667311695098##
+                   10237495820715502643##
+                   Lib.$trModule
+                   Lib.$tc'Day1) -}
+33574c0498ea5d2aa4d12949c21062a7
+  $tc'Day1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Day"#) -}
+35d29196c68bf80f310d240bde7a9c69
+  $tc'December :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9979846110168252432##
+                   16043736315895630484##
+                   Lib.$trModule
+                   Lib.$tc'December1) -}
+975d64688b96a96d054d282e45b8ab45
+  $tc'December1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'December"#) -}
+30043e13a985ef85c0aabdc86a7f144d
+  $tc'February :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9457723285921402771##
+                   12618148451306377313##
+                   Lib.$trModule
+                   Lib.$tc'February1) -}
+61690b68668b50ed5be220d51b99acb3
+  $tc'February1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'February"#) -}
+52d4e063cb71874581a47b2d3fcf5dae
+  $tc'January :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1603834585783762630##
+                   16359378022502084832##
+                   Lib.$trModule
+                   Lib.$tc'January1) -}
+635cc629d1d25e084727e4761bb4c5c7
+  $tc'January1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'January"#) -}
+db86a0408fae134e51a890c320c051e4
+  $tc'July :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7736022959061051874##
+                   5958408839269591536##
+                   Lib.$trModule
+                   Lib.$tc'July1) -}
+0719617f8f64ec786ded7b5f83cab9c4
+  $tc'July1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'July"#) -}
+01cae7d58eae0b41315e6605613e81ca
+  $tc'June :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2045368068071566737##
+                   10152276280095656357##
+                   Lib.$trModule
+                   Lib.$tc'June1) -}
+48c63a15a499922d3737406aafa28c74
+  $tc'June1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'June"#) -}
+170dc8d6f142e6c7546024d2a8869d63
+  $tc'March :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8445333863333581029##
+                   9959152836889871144##
+                   Lib.$trModule
+                   Lib.$tc'March1) -}
+5bef7137d36a233d3f00f0a4c121821e
+  $tc'March1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'March"#) -}
+acdb17ca2c0ed827fcfb4283afe89137
+  $tc'May :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9121685304665095548##
+                   12238610743381291971##
+                   Lib.$trModule
+                   Lib.$tc'May1) -}
+7246ecbee141968bb617f41c87066fc5
+  $tc'May1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'May"#) -}
+c436e160be5985ff4ccd0981bb345fec
+  $tc'Meet :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16890939213184548246##
+                   12341321314313433393##
+                   Lib.$trModule
+                   Lib.$tc'Meet1) -}
+c369bfff6cf25beb6b924cb2afc32496
+  $tc'Meet1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Meet"#) -}
+4981a2371bc55ca04f028bcfcc99f9e4
+  $tc'Notebook :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   61835542396056065##
+                   7688208799166092414##
+                   Lib.$trModule
+                   Lib.$tc'Notebook1) -}
+1820d6cd54e30b2f1fd795f73acdf355
+  $tc'Notebook1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Notebook"#) -}
+2851e8216e90c665aeff7ea292e460b9
+  $tc'November :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16541074228837309766##
+                   14005593212777313055##
+                   Lib.$trModule
+                   Lib.$tc'November1) -}
+ba14a4631f915e5fa865216e5e3ed247
+  $tc'November1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'November"#) -}
+783466cb0d7bbf57b122c32eb42dbc91
+  $tc'October :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4496269333725776051##
+                   17331220322575548809##
+                   Lib.$trModule
+                   Lib.$tc'October1) -}
+631e7ae401aad30f64ab94a3f5789a31
+  $tc'October1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'October"#) -}
+975cb39c85d38c7b9bb5a1305936628b
+  $tc'People :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5929844706841112307##
+                   5198637634363057924##
+                   Lib.$trModule
+                   Lib.$tc'People1) -}
+c431a143b825c233c020f310300b59bc
+  $tc'People1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'People"#) -}
+66d40076c91883e0d6f8c9a8c7c8b046
+  $tc'Phone :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15878201570180647256##
+                   12761585588035076730##
+                   Lib.$trModule
+                   Lib.$tc'Phone1) -}
+27537f92febfe881810f7ccee3063e86
+  $tc'Phone1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Phone"#) -}
+1694d5d57f21b47bbaebcb26ff0e6c26
+  $tc'Phones :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12297371459736259244##
+                   2006417948958404552##
+                   Lib.$trModule
+                   Lib.$tc'Phones1) -}
+0f9a668d798bf1cd589c685f55924dd2
+  $tc'Phones1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Phones"#) -}
+b32b8512c3245226b8eb261f823bb07f
+  $tc'September :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7517345591680801471##
+                   595315473316061774##
+                   Lib.$trModule
+                   Lib.$tc'September1) -}
+92f8160e6eaf90811f2edd6c5783d902
+  $tc'September1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'September"#) -}
+b46372bd6525758696e5b29e4abff300
+  $tc'Time :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9900819727626946636##
+                   1062045403927513407##
+                   Lib.$trModule
+                   Lib.$tc'Time1) -}
+96ace29500790cb317dcce08adc80874
+  $tc'Time1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Time"#) -}
+aa903862266d66a493c18bc09a3e9d86
+  $tcDate :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10464914893341320523##
+                   7656282424315127921##
+                   Lib.$trModule
+                   Lib.$tcDate1) -}
+8ef5e87cdc61c2dc5b9495deacb27520
+  $tcDate1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Date"#) -}
+a1736bfdff47cd21c9e3ee620dc4e8e9
+  $tcDateWithTime :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2345405358543490464##
+                   6982995969833013186##
+                   Lib.$trModule
+                   Lib.$tcDateWithTime1) -}
+b66ffcfdca14eda3aa101fcad9706722
+  $tcDateWithTime1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "DateWithTime"#) -}
+c1727daa91734648b82fc258d13ebb88
+  $tcDay :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3852244707854886657##
+                   7802495206201824574##
+                   Lib.$trModule
+                   Lib.$tcDay1) -}
+8a777ea4737b49dbe9343d7de5c97759
+  $tcDay1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Day"#) -}
+b4aba0ec411a3b95fbba697fec607825
+  $tcMeet :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4848276873832885207##
+                   8220617665745567341##
+                   Lib.$trModule
+                   Lib.$tcMeet1) -}
+ab72348d734a33e61936d7b6bed69d06
+  $tcMeet1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Meet"#) -}
+30874f01eec6f8d39e6d2856b500f527
+  $tcMonth :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3019769898141782449##
+                   7777571813210852444##
+                   Lib.$trModule
+                   Lib.$tcMonth1) -}
+9521fe0923c2fec899a5c76da1519161
+  $tcMonth1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Month"#) -}
+1ed4bfffbfbac6cc900ed38ba10f945c
+  $tcNotebook :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1200038171601955276##
+                   10156848124769170908##
+                   Lib.$trModule
+                   Lib.$tcNotebook1) -}
+9bf981a9da6fea1cf4c3558c18609da3
+  $tcNotebook1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Notebook"#) -}
+6b2ce5867f704134e9c83b2949c722bf
+  $tcPeople :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3280745245797923241##
+                   11141848732098130255##
+                   Lib.$trModule
+                   Lib.$tcPeople1) -}
+caab416e94eefe34849533e299871aad
+  $tcPeople1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "People"#) -}
+343881c5cb019eec68189f5695525e6b
+  $tcPhone :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15376475254030338774##
+                   1397799961278551809##
+                   Lib.$trModule
+                   Lib.$tcPhone1) -}
+38cb5f501af3bda2f767dda34f66a721
+  $tcPhone1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Phone"#) -}
+afe68adc3f0196d17aabf212184ad980
+  $tcTime :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15275196818427674194##
+                   4931311579502444705##
+                   Lib.$trModule
+                   Lib.$tcTime1) -}
+ea4110573c567e2b4f0e5be28d988f4e
+  $tcTime1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Time"#) -}
+ce024bb4a700748929d13f6ca4fc2040
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Lib.$trModule2 Lib.$trModule1) -}
+ea95e106e9fb99a5bd1522c76297a83a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Lib"#) -}
+0611f5dad122d50c6122314f0944a343
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "lab05-0.1.0.0-F7mqI451Ssi8Ac6N0Oz1x2"#) -}
+2e3de5ce0e1950d74278c1aef22fd21d
+  $w$cshow :: GHC.Prim.Int# -> Lib.Month -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) (ww1 :: Lib.Month) ->
+                 case GHC.Show.$wshowSignedInt
+                        0#
+                        ww
+                        (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                   (GHC.CString.unpackAppendCString#
+                      " "#
+                      (Lib.$w$cshowsPrec1 ww1 (GHC.Types.[] @ GHC.Types.Char))) }) -}
+0c9719b038e02a5bcbc81bb3a1c0ea1d
+  $w$cshow1 ::
+    GHC.Prim.Int# -> Lib.Month -> Lib.Time -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><L,1*U><L,1*U(1*U(U),1*U(U))>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: Lib.Month)
+                   (ww2 :: Lib.Time) ->
+                 case GHC.Show.$wshowSignedInt
+                        0#
+                        ww
+                        (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                   (GHC.CString.unpackAppendCString#
+                      " "#
+                      (GHC.Base.++
+                         @ GHC.Types.Char
+                         (Lib.$w$cshowsPrec1 ww1 (GHC.Types.[] @ GHC.Types.Char))
+                         (GHC.CString.unpackAppendCString#
+                            " "#
+                            (case ww2 of ww3 { Lib.Time ww7 ww8 ->
+                             case ww7 of ww9 { GHC.Types.I# ww10 ->
+                             Lib.$w$cshow2 ww10 ww8 } })))) }) -}
+b7768a194541ec1f069e4c3619011dda
+  $w$cshow2 :: GHC.Prim.Int# -> GHC.Types.Int -> GHC.Base.String
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><L,1*U(U)>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) (ww1 :: GHC.Types.Int) ->
+                 case GHC.Show.$wshowSignedInt
+                        0#
+                        ww
+                        (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                   (GHC.CString.unpackAppendCString#
+                      ":"#
+                      (case ww1 of ww2 { GHC.Types.I# ww3 ->
+                       case GHC.Show.$wshowSignedInt
+                              0#
+                              ww3
+                              (GHC.Types.[] @ GHC.Types.Char) of ww8 { (#,#) ww9 ww10 ->
+                       GHC.Types.: @ GHC.Types.Char ww9 ww10 } })) }) -}
+67ae1ee3b13e819b7551b33beb584dde
+  $w$cshow3 ::
+    Lib.DateWithTime
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Types.Bool
+    -> GHC.Base.String
+  {- Arity: 4,
+     Strictness: <L,1*U(1*U(1*U(U)),1*U,1*U(1*U(U),1*U(U)))><L,1*U><L,1*U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: Lib.DateWithTime)
+                   (ww1 :: GHC.Base.String)
+                   (ww2 :: GHC.Base.String)
+                   (ww3 :: GHC.Types.Bool) ->
+                 GHC.CString.unpackAppendCString#
+                   "\n\
+                   \\t    Meet:\n\
+                   \\t\tDate: "#
+                   (case ww of ww4 { Lib.DateWithTime ww5 ww6 ww7 ->
+                    case ww5 of ww8 { Lib.Day ww9 ->
+                    case ww9 of ww10 { GHC.Types.I# ww11 ->
+                    GHC.Base.++
+                      @ GHC.Types.Char
+                      (Lib.$w$cshow1 ww11 ww6 ww7)
+                      (GHC.CString.unpackAppendCString#
+                         "\n\
+                         \\t\tMeeting point: "#
+                         (GHC.Base.++
+                            @ GHC.Types.Char
+                            (GHC.Types.:
+                               @ GHC.Types.Char
+                               GHC.Show.shows6
+                               (GHC.Show.showLitString ww1 Lib.$fShowMeet5))
+                            (GHC.CString.unpackAppendCString#
+                               "\n\
+                               \\t\tDescription: "#
+                               (GHC.Base.++
+                                  @ GHC.Types.Char
+                                  (GHC.Types.:
+                                     @ GHC.Types.Char
+                                     GHC.Show.shows6
+                                     (GHC.Show.showLitString ww2 Lib.$fShowMeet5))
+                                  (GHC.CString.unpackAppendCString#
+                                     "\n\
+                                     \\t\tDid the meeting take place? "#
+                                     (case ww3 of wild {
+                                        GHC.Types.False -> Lib.$fShowMeet4
+                                        GHC.Types.True -> Lib.$fShowMeet2 })))))) } } })) -}
+6083ba913fecbeaf94c8c8f2d46cb773
+  $w$cshow4 ::
+    GHC.Base.String
+    -> Lib.Phone -> Lib.Date -> [Lib.Meet] -> GHC.Base.String
+  {- Arity: 4,
+     Strictness: <L,1*U><L,1*U><L,1*U(1*U(1*U(U)),1*U)><L,1*U>,
+     Inline: [0] -}
+4cec84e883a9cea019ec77ea58ff3e51
+  $w$cshowsPrec ::
+    GHC.Prim.Int# -> Lib.Month -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 3, Strictness: <S,U><L,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: Lib.Month)
+                   (w :: GHC.Base.String) ->
+                 case GHC.Show.$wshowSignedInt
+                        0#
+                        ww
+                        (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                   (GHC.CString.unpackAppendCString#
+                      " "#
+                      (GHC.Base.++
+                         @ GHC.Types.Char
+                         (Lib.$w$cshowsPrec1 ww1 (GHC.Types.[] @ GHC.Types.Char))
+                         w)) }) -}
+216455cb09710d73efa1cc70e09250b2
+  $w$cshowsPrec1 :: Lib.Month -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Lib.Month) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Lib.January -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowDate12 w1
+                   Lib.February -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowDate11 w1
+                   Lib.March -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowDate10 w1
+                   Lib.April -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowDate9 w1
+                   Lib.May -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowDate8 w1
+                   Lib.June -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowDate7 w1
+                   Lib.July -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowDate6 w1
+                   Lib.August -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowDate5 w1
+                   Lib.September -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowDate4 w1
+                   Lib.October -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowDate3 w1
+                   Lib.November -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowDate2 w1
+                   Lib.December
+                   -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowDate1 w1 }) -}
+686374f8f7724089be998123df345bb5
+  $w$cshowsPrec2 ::
+    GHC.Prim.Int# -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) (w :: GHC.Base.String) ->
+                 case GHC.Show.$wshowSignedInt
+                        0#
+                        ww
+                        (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                   w }) -}
+4e5b864411251a29ff62699db9009abb
+  $w$cshowsPrec3 :: Lib.Phone -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Lib.Phone) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Lib.Phone a
+                   -> GHC.CString.unpackAppendCString#
+                        "Phone: "#
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           (GHC.Types.:
+                              @ GHC.Types.Char
+                              GHC.Show.shows6
+                              (GHC.Show.showLitString a Lib.$fShowMeet5))
+                           w1)
+                   Lib.Phones a
+                   -> GHC.CString.unpackAppendCString#
+                        "Phones: "#
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           (GHC.Show.showList__
+                              @ [GHC.Types.Char]
+                              GHC.Show.shows_$cshowList1
+                              a
+                              (GHC.Types.[] @ GHC.Types.Char))
+                           w1) }) -}
+21a37a634d3d6962f595c1e88ca1197d
+  (+++) :: Lib.Phone -> GHC.Base.String -> Lib.Phone
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>m2,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Lib.Phone) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Lib.Phone a
+                   -> Lib.Phones
+                        (GHC.Types.:
+                           @ GHC.Base.String
+                           a
+                           (GHC.Types.:
+                              @ GHC.Base.String
+                              w1
+                              (GHC.Types.[] @ GHC.Base.String)))
+                   Lib.Phones a
+                   -> Lib.Phones
+                        (GHC.Base.++
+                           @ [GHC.Types.Char]
+                           a
+                           (GHC.Types.:
+                              @ [GHC.Types.Char]
+                              w1
+                              (GHC.Types.[] @ [GHC.Types.Char]))) }) -}
+5b54440f7762729edaf0166446baa7ff
+  data Date = Date Lib.Day Lib.Month
+3b3e9fe18633a4e413e498989f66e42d
+  data DateWithTime = DateWithTime Lib.Day Lib.Month Lib.Time
+1831ece90a5f44b2e48b6ba6efc037f7
+  data Day = Day GHC.Types.Int
+916c6dece3af605d9beb6fc220e6648a
+  data Meet
+    = Meet {dateWithTime :: Lib.DateWithTime,
+            meetingPoint :: GHC.Base.String,
+            description :: GHC.Base.String,
+            isHappened :: GHC.Types.Bool}
+216455cb09710d73efa1cc70e09250b2
+  data Month
+    = January
+    | February
+    | March
+    | April
+    | May
+    | June
+    | July
+    | August
+    | September
+    | October
+    | November
+    | December
+5ad096d58fb7b51e342960265f912bde
+  data Notebook = Notebook [Lib.People]
+ebb3f905d1d21f9e47014cd1248f6c82
+  data People
+    = People {name :: GHC.Base.String,
+              phone :: Lib.Phone,
+              dateOfBirdth :: Lib.Date,
+              meets :: [Lib.Meet]}
+4e5b864411251a29ff62699db9009abb
+  data Phone
+    = Phone {phoneNumber :: GHC.Base.String}
+    | Phones {phoneNumbers :: [GHC.Base.String]}
+f21b365556730e474f104b592c6d9031
+  data Time = Time GHC.Types.Int GHC.Types.Int
+464f2992948a1b9257596bbf2686f323
+  dateOfBirdth :: Lib.People -> Lib.Date
+  RecSel Left Lib.People
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSL),1*U(A,A,1*U(U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Lib.People) ->
+                 case ds of wild { Lib.People ds1 ds2 ds3 ds4 -> ds3 }) -}
+d7df9b8ac7ebaad6be6ffa999af98650
+  dateWithTime :: Lib.Meet -> Lib.DateWithTime
+  RecSel Left Lib.Meet
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLL),1*U(1*U(U,U,U),A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Lib.Meet) ->
+                 case ds of wild { Lib.Meet ds1 ds2 ds3 ds4 -> ds1 }) -}
+b5634cadf9b2b0a2972f3f711dacc441
+  description :: Lib.Meet -> GHC.Base.String
+  RecSel Left Lib.Meet
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLSL),1*U(A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Lib.Meet) ->
+                 case ds of wild { Lib.Meet ds1 ds2 ds3 ds4 -> ds3 }) -}
+b59f8975daf132ec12c2bb7c12552788
+  getMeet :: [Lib.People] -> GHC.Base.String -> [Lib.Meet]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
+b49b4b6f625622123e4f172b59315567
+  getNotebook :: [Lib.People]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Lib.People
+                   Lib.getNotebook38
+                   Lib.getNotebook1) -}
+7d1f8655c4995b21165314d6255f2204
+  getNotebook1 :: [Lib.People]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Lib.People
+                   Lib.getNotebook20
+                   Lib.getNotebook2) -}
+d2e019177fec77d584c293b7d51fe3af
+  getNotebook10 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+7eae83822c02823b255e93150a5c852a
+  getNotebook11 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 9#) -}
+4955b15b5cf86483859a072c47166756
+  getNotebook12 :: Lib.Day
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Lib.Day Lib.getNotebook13) -}
+cce5c5dca590501e5b182526d6578e14
+  getNotebook13 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 30#) -}
+4ee3a98d3f8f7991491e634c81525a76
+  getNotebook14 :: Lib.Date
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Lib.Date Lib.getNotebook15 Lib.February) -}
+d49a99d8afdcc0c5b436a3f0052d2e34
+  getNotebook15 :: Lib.Day
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Lib.Day Lib.getNotebook16) -}
+b7027d0a273661b9af3ba6913a7142a3
+  getNotebook16 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 25#) -}
+a46c1aac6881f6f1f6149661ab1acbd4
+  getNotebook17 :: Lib.Phone
+  {- Strictness: m1, Unfolding: (Lib.Phone Lib.getNotebook18) -}
+add128b2588dcb1716da9dbb4196f0ff
+  getNotebook18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "+380933333333"#) -}
+418ae910ea211b8bd07bd5d67a62b285
+  getNotebook19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Vasya"#) -}
+8303bc30d8ca3ed822623cb56ad38b2b
+  getNotebook2 :: [Lib.People]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Lib.People
+                   Lib.getNotebook3
+                   (GHC.Types.[] @ Lib.People)) -}
+65a64eb7e8c7e70773c87883e4084ed1
+  getNotebook20 :: Lib.People
+  {- Strictness: m,
+     Unfolding: (Lib.People
+                   Lib.getNotebook37
+                   Lib.getNotebook35
+                   Lib.getNotebook32
+                   Lib.getNotebook21) -}
+aab47e717cf890efbd243a1d56c9c4d8
+  getNotebook21 :: [Lib.Meet]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Lib.Meet
+                   Lib.getNotebook31
+                   Lib.getNotebook22) -}
+0f65bdc5a08b7bf1f0c78962dfb8ff9a
+  getNotebook22 :: [Lib.Meet]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Lib.Meet
+                   Lib.getNotebook23
+                   (GHC.Types.[] @ Lib.Meet)) -}
+570b2dc99c83f59a030150e299d13dba
+  getNotebook23 :: Lib.Meet
+  {- Strictness: m,
+     Unfolding: (Lib.Meet
+                   Lib.getNotebook25
+                   Lib.getNotebook24
+                   Lib.getNotebook6
+                   GHC.Types.False) -}
+e6bdc2032358e5148ca60e1977746c6a
+  getNotebook24 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Orrr"#) -}
+a7e3756648b3f54b8b4a5f3248de4bf7
+  getNotebook25 :: Lib.DateWithTime
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Lib.DateWithTime
+                   Lib.getNotebook29
+                   Lib.January
+                   Lib.getNotebook26) -}
+ebd80d74e6888b1427bf8d8ba314372a
+  getNotebook26 :: Lib.Time
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Lib.Time Lib.getNotebook28 Lib.getNotebook27) -}
+aed482c40585e71def417a829c5d3cb8
+  getNotebook27 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 20#) -}
+90c2b42274815631350d36cbb9925f97
+  getNotebook28 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 12#) -}
+d5c787d1d5102dd50ccf4c36bf63094b
+  getNotebook29 :: Lib.Day
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Lib.Day Lib.getNotebook30) -}
+ff0567f9ae741f1a7b463d2ea1cf6f5a
+  getNotebook3 :: Lib.People
+  {- Strictness: m,
+     Unfolding: (Lib.People
+                   Lib.getNotebook19
+                   Lib.getNotebook17
+                   Lib.getNotebook14
+                   Lib.getNotebook4) -}
+d294dd79987ff1bc72e02853aa950dd1
+  getNotebook30 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 10#) -}
+8c02707b05eb230410dd0be0ca3ccca3
+  getNotebook31 :: Lib.Meet
+  {- Strictness: m,
+     Unfolding: (Lib.Meet
+                   Lib.getNotebook8
+                   Lib.getNotebook24
+                   Lib.getNotebook6
+                   GHC.Types.True) -}
+635abdaabc67291dae2c57cd6130791c
+  getNotebook32 :: Lib.Date
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Lib.Date Lib.getNotebook33 Lib.June) -}
+3d2b3daafc2e3c1e04329d5242d60fdf
+  getNotebook33 :: Lib.Day
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Lib.Day Lib.getNotebook34) -}
+e35fe3c76edba4a06730b22e4d269d66
+  getNotebook34 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 22#) -}
+186b3e99dd5a50782205d603ee7c78c7
+  getNotebook35 :: Lib.Phone
+  {- Strictness: m1, Unfolding: (Lib.Phone Lib.getNotebook36) -}
+c88cf8b18ec2c7a40e7e9415c952683f
+  getNotebook36 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "+380636776918"#) -}
+dac457a2f51b5fc57d0ddfa3fb83789c
+  getNotebook37 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Dima"#) -}
+adb5eb5317515f0a40b520ff39ac18ff
+  getNotebook38 :: Lib.People
+  {- Strictness: m,
+     Unfolding: (Lib.People
+                   Lib.getNotebook57
+                   Lib.getNotebook55
+                   Lib.getNotebook54
+                   Lib.getNotebook39) -}
+cd45e585c8da329673fdd99da8cff655
+  getNotebook39 :: [Lib.Meet]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Lib.Meet
+                   Lib.getNotebook49
+                   Lib.getNotebook40) -}
+40e00a765a59251a1fbaf4d7276e204f
+  getNotebook4 :: [Lib.Meet]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Lib.Meet
+                   Lib.getNotebook5
+                   (GHC.Types.[] @ Lib.Meet)) -}
+066907d0ac9fcd009abe9383780434ff
+  getNotebook40 :: [Lib.Meet]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Lib.Meet
+                   Lib.getNotebook41
+                   (GHC.Types.[] @ Lib.Meet)) -}
+dc3ca827260167860bb28d26850af2fc
+  getNotebook41 :: Lib.Meet
+  {- Strictness: m,
+     Unfolding: (Lib.Meet
+                   Lib.getNotebook44
+                   Lib.getNotebook43
+                   Lib.getNotebook42
+                   GHC.Types.True) -}
+21cbb5ade19029c8294cabd956487154
+  getNotebook42 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "None"#) -}
+29a0623813a0cab3c1583b29fb7b538c
+  getNotebook43 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Meet 2"#) -}
+36d1d2352d0fa732697b692fbe4487d8
+  getNotebook44 :: Lib.DateWithTime
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Lib.DateWithTime
+                   Lib.getNotebook47
+                   Lib.December
+                   Lib.getNotebook45) -}
+0d7bf9ad02e81e900ddc5b2473ce23ad
+  getNotebook45 :: Lib.Time
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Lib.Time Lib.getNotebook46 Lib.getNotebook10) -}
+0fa9408cf7656a3c3c77cc1caad59f0d
+  getNotebook46 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 19#) -}
+9f92ab42036fd0950c801a56b58e9535
+  getNotebook47 :: Lib.Day
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Lib.Day Lib.getNotebook48) -}
+1d9a61e936fa89ea23a93a26e928db9c
+  getNotebook48 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 18#) -}
+04ca6f277cafeffb68c381d86ad28262
+  getNotebook49 :: Lib.Meet
+  {- Strictness: m,
+     Unfolding: (Lib.Meet
+                   Lib.getNotebook51
+                   Lib.getNotebook50
+                   Lib.getNotebook42
+                   GHC.Types.True) -}
+6faead760fb67e1e03b605eb17e9c2f7
+  getNotebook5 :: Lib.Meet
+  {- Strictness: m,
+     Unfolding: (Lib.Meet
+                   Lib.getNotebook8
+                   Lib.getNotebook7
+                   Lib.getNotebook6
+                   GHC.Types.True) -}
+d9133d27843d365df1e281de5d0de1f3
+  getNotebook50 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Meet 1"#) -}
+1d28418cc82d7e52a62f13d70bf96568
+  getNotebook51 :: Lib.DateWithTime
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Lib.DateWithTime
+                   Lib.getNotebook52
+                   Lib.September
+                   Lib.getNotebook9) -}
+bd802b8a151b6dcbf0999f63677c7e2a
+  getNotebook52 :: Lib.Day
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Lib.Day Lib.getNotebook53) -}
+7eeba608a8f845521ef446669134779b
+  getNotebook53 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+6ed62d9a9711f5d99099eb523d677fc8
+  getNotebook54 :: Lib.Date
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Lib.Date Lib.getNotebook12 Lib.September) -}
+8e3de8b41eb3b28b696c0a1f6f856ac9
+  getNotebook55 :: Lib.Phone
+  {- Strictness: m1, Unfolding: (Lib.Phone Lib.getNotebook56) -}
+a865c9ad96626e186130631baf75fb8f
+  getNotebook56 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "+380966319362"#) -}
+a8dbc7dd6f1eff5e2d17a6425d03b6e8
+  getNotebook57 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Zhenia"#) -}
+76623c0bb06fb3d83dae39488738d178
+  getNotebook6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Rooo"#) -}
+4de8513ffcf0a0e7e711e68fa99d1a4a
+  getNotebook7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "qwerty"#) -}
+c4b11881e2aafd644e032451d7a7b58d
+  getNotebook8 :: Lib.DateWithTime
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Lib.DateWithTime
+                   Lib.getNotebook12
+                   Lib.September
+                   Lib.getNotebook9) -}
+768136e239deaca6a5685ffa987bd733
+  getNotebook9 :: Lib.Time
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Lib.Time Lib.getNotebook11 Lib.getNotebook10) -}
+9ef7943f52279b32cf2d3679dadd2f1e
+  isHappened :: Lib.Meet -> GHC.Types.Bool
+  RecSel Left Lib.Meet
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLS),1*U(A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Lib.Meet) ->
+                 case ds of wild { Lib.Meet ds1 ds2 ds3 ds4 -> ds4 }) -}
+319732116dd96275981e62b9a0fc9a86
+  meetingPoint :: Lib.Meet -> GHC.Base.String
+  RecSel Left Lib.Meet
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSLL),1*U(A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Lib.Meet) ->
+                 case ds of wild { Lib.Meet ds1 ds2 ds3 ds4 -> ds2 }) -}
+367199fc1fa4c37a0c3bdd8c08e48faf
+  meets :: Lib.People -> [Lib.Meet]
+  RecSel Left Lib.People
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLS),1*U(A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Lib.People) ->
+                 case ds of wild { Lib.People ds1 ds2 ds3 ds4 -> ds4 }) -}
+5a6ccc689376d21fd98f61bbb5495490
+  name :: Lib.People -> GHC.Base.String
+  RecSel Left Lib.People
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLLL),1*U(1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Lib.People) ->
+                 case ds of wild { Lib.People ds1 ds2 ds3 ds4 -> ds1 }) -}
+ee24b44dd22d95d932f7ecd8381ba859
+  phone :: Lib.People -> Lib.Phone
+  RecSel Left Lib.People
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSLL),1*U(A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Lib.People) ->
+                 case ds of wild { Lib.People ds1 ds2 ds3 ds4 -> ds2 }) -}
+5df04eddfae6ce1152ee826162303528
+  phoneNumber :: Lib.Phone -> GHC.Base.String
+  RecSel Left Lib.Phone
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Lib.Phone) ->
+                 case ds of wild {
+                   Lib.Phone ds1 -> ds1 Lib.Phones ipv -> Lib.phoneNumber1 }) -}
+25538519707c11acb8d37a7ed3fef187
+  phoneNumber1 :: GHC.Base.String
+  {- Strictness: x -}
+ae541d4d5783c2e98962b126ea431522
+  phoneNumbers :: Lib.Phone -> [GHC.Base.String]
+  RecSel Left Lib.Phone
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Lib.Phone) ->
+                 case ds of wild {
+                   Lib.Phone ipv -> Lib.phoneNumbers1 Lib.Phones ds1 -> ds1 }) -}
+70898bb94f16702d0315f2fccc5bf738
+  phoneNumbers1 :: [GHC.Base.String]
+  {- Strictness: x -}
+instance [safe] GHC.Classes.Eq [Lib.Day] = Lib.$fEqDay
+instance [safe] GHC.Show.Show [Lib.Date] = Lib.$fShowDate
+instance [safe] GHC.Show.Show [Lib.DateWithTime]
+  = Lib.$fShowDateWithTime
+instance [safe] GHC.Show.Show [Lib.Day] = Lib.$fShowDay
+instance [safe] GHC.Show.Show [Lib.Meet] = Lib.$fShowMeet
+instance [safe] GHC.Show.Show [Lib.Month] = Lib.$fShowMonth
+instance [safe] GHC.Show.Show [Lib.People] = Lib.$fShowPeople
+instance [safe] GHC.Show.Show [Lib.Phone] = Lib.$fShowPhone
+instance [safe] GHC.Show.Show [Lib.Time] = Lib.$fShowTime
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

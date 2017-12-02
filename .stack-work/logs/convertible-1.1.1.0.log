@@ -1,0 +1,34 @@
+Configuring convertible-1.1.1.0...
+Building convertible-1.1.1.0...
+Preprocessing library convertible-1.1.1.0...
+[1 of 9] Compiling Data.Convertible.Base ( Data\Convertible\Base.hs, .stack-work\dist\ca59d0ab\build\Data\Convertible\Base.o )
+
+Data\Convertible\Base.hs:31:1: warning: [-Wdeprecations]
+    Module `Control.Monad.Error' is deprecated:
+      Use Control.Monad.Except instead
+
+Data\Convertible\Base.hs:92:10: warning: [-Wdeprecations]
+    In the use of type constructor or class `Error'
+    (imported from Control.Monad.Error, but defined in transformers-0.5.2.0:Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+Data\Convertible\Base.hs:92:10: warning: [-Wdeprecations]
+    In the use of type constructor or class `Error'
+    (imported from Control.Monad.Error, but defined in transformers-0.5.2.0:Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+[2 of 9] Compiling Data.Convertible.Instances.Map ( Data\Convertible\Instances\Map.hs, .stack-work\dist\ca59d0ab\build\Data\Convertible\Instances\Map.o )
+[3 of 9] Compiling Data.Convertible.Instances.Text ( Data\Convertible\Instances\Text.hs, .stack-work\dist\ca59d0ab\build\Data\Convertible\Instances\Text.o )
+
+Data\Convertible\Instances\Text.hs:41:1: warning: [-Wunused-imports]
+    The import of `Data.Foldable' is redundant
+      except perhaps to import instances from `Data.Foldable'
+    To import instances alone, use: import Data.Foldable()
+[4 of 9] Compiling Data.Convertible.Utils ( Data\Convertible\Utils.hs, .stack-work\dist\ca59d0ab\build\Data\Convertible\Utils.o )
+[5 of 9] Compiling Data.Convertible.Instances.Num ( Data\Convertible\Instances\Num.hs, .stack-work\dist\ca59d0ab\build\Data\Convertible\Instances\Num.o )
+[6 of 9] Compiling Data.Convertible.Instances.C ( Data\Convertible\Instances\C.hs, .stack-work\dist\ca59d0ab\build\Data\Convertible\Instances\C.o )
+[7 of 9] Compiling Data.Convertible.Instances.Time ( Data\Convertible\Instances\Time.hs, .stack-work\dist\ca59d0ab\build\Data\Convertible\Instances\Time.o )
+[8 of 9] Compiling Data.Convertible.Instances ( Data\Convertible\Instances.hs, .stack-work\dist\ca59d0ab\build\Data\Convertible\Instances.o )
+[9 of 9] Compiling Data.Convertible ( Data\Convertible.hs, .stack-work\dist\ca59d0ab\build\Data\Convertible.o )
+Installing library in
+C:\sr\snapshots\3c4ad812\lib\x86_64-windows-ghc-8.0.2\convertible-1.1.1.0-FM6RC8n6JG91WdGj8q2BzE
+Registering convertible-1.1.1.0...

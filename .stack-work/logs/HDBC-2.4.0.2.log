@@ -1,0 +1,14 @@
+Configuring HDBC-2.4.0.2...
+Building HDBC-2.4.0.2...
+Preprocessing library HDBC-2.4.0.2...
+[1 of 8] Compiling Database.HDBC.Locale ( Database\HDBC\Locale.hs, .stack-work\dist\ca59d0ab\build\Database\HDBC\Locale.o )
+[2 of 8] Compiling Database.HDBC.SqlValue ( Database\HDBC\SqlValue.hs, .stack-work\dist\ca59d0ab\build\Database\HDBC\SqlValue.o )
+[3 of 8] Compiling Database.HDBC.ColTypes ( Database\HDBC\ColTypes.hs, .stack-work\dist\ca59d0ab\build\Database\HDBC\ColTypes.o )
+[4 of 8] Compiling Database.HDBC.Statement ( Database\HDBC\Statement.hs, .stack-work\dist\ca59d0ab\build\Database\HDBC\Statement.o )
+[5 of 8] Compiling Database.HDBC.Types ( Database\HDBC\Types.hs, .stack-work\dist\ca59d0ab\build\Database\HDBC\Types.o )
+[6 of 8] Compiling Database.HDBC.DriverUtils ( Database\HDBC\DriverUtils.hs, .stack-work\dist\ca59d0ab\build\Database\HDBC\DriverUtils.o )
+[7 of 8] Compiling Database.HDBC.Utils ( Database\HDBC\Utils.hs, .stack-work\dist\ca59d0ab\build\Database\HDBC\Utils.o )
+[8 of 8] Compiling Database.HDBC    ( Database\HDBC.hs, .stack-work\dist\ca59d0ab\build\Database\HDBC.o )
+Installing library in
+C:\sr\snapshots\3c4ad812\lib\x86_64-windows-ghc-8.0.2\HDBC-2.4.0.2-CMf0h3SvMqFJUriR2hhqrA
+Registering HDBC-2.4.0.2...

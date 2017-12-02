@@ -1,0 +1,212 @@
+Configuring HDBC-odbc-2.5.0.1...
+Building HDBC-odbc-2.5.0.1...
+Preprocessing library HDBC-odbc-2.5.0.1...
+[ 1 of 11] Compiling Database.HDBC.ODBC.Log ( Database\HDBC\ODBC\Log.hs, .stack-work\dist\ca59d0ab\build\Database\HDBC\ODBC\Log.o )
+[ 2 of 11] Compiling Database.HDBC.ODBC.ConnectionImpl ( Database\HDBC\ODBC\ConnectionImpl.hs, .stack-work\dist\ca59d0ab\build\Database\HDBC\ODBC\ConnectionImpl.o )
+[ 3 of 11] Compiling Database.HDBC.ODBC.Api.Types ( .stack-work\dist\ca59d0ab\build\Database\HDBC\ODBC\Api\Types.hs, .stack-work\dist\ca59d0ab\build\Database\HDBC\ODBC\Api\Types.o )
+[ 4 of 11] Compiling Database.HDBC.ODBC.Utils ( Database\HDBC\ODBC\Utils.hs, .stack-work\dist\ca59d0ab\build\Database\HDBC\ODBC\Utils.o )
+[ 5 of 11] Compiling Database.HDBC.ODBC.TypeConv ( .stack-work\dist\ca59d0ab\build\Database\HDBC\ODBC\TypeConv.hs, .stack-work\dist\ca59d0ab\build\Database\HDBC\ODBC\TypeConv.o )
+[ 6 of 11] Compiling Database.HDBC.ODBC.Api.Imports ( .stack-work\dist\ca59d0ab\build\Database\HDBC\ODBC\Api\Imports.hs, .stack-work\dist\ca59d0ab\build\Database\HDBC\ODBC\Api\Imports.o )
+
+Database\HDBC\ODBC\Api\Imports.hsc:53:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLAllocHandle" imp_sqlAllocHandle
+          :: SQLSMALLINT -> SQLHANDLE -> Ptr SQLHANDLE -> IO SQLRETURN
+
+Database\HDBC\ODBC\Api\Imports.hsc:62:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLFreeHandle" imp_sqlFreeHandle
+          :: SQLSMALLINT -> SQLHANDLE -> IO SQLRETURN
+
+Database\HDBC\ODBC\Api\Imports.hsc:71:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLCancel" imp_sqlCancel
+          :: SQLHSTMT -> IO SQLRETURN
+
+Database\HDBC\ODBC\Api\Imports.hsc:80:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLCloseCursor" imp_sqlCloseCursor
+          :: SQLHSTMT -> IO SQLRETURN
+
+Database\HDBC\ODBC\Api\Imports.hsc:89:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLDisconnect" imp_sqlDisconnect
+          :: SQLHDBC -> IO SQLRETURN
+
+Database\HDBC\ODBC\Api\Imports.hsc:97:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLGetDiagRecW" imp_sqlGetDiagRecW
+          :: SQLSMALLINT
+             -> Ptr ()
+                -> SQLSMALLINT
+                   -> CWString
+                      -> Ptr SQLINTEGER
+                         -> CWString -> SQLSMALLINT -> Ptr SQLSMALLINT -> IO SQLRETURN
+
+Database\HDBC\ODBC\Api\Imports.hsc:119:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLFreeStmt" imp_sqlFreeStmt
+          :: SQLHSTMT -> SQLUSMALLINT -> IO SQLRETURN
+
+Database\HDBC\ODBC\Api\Imports.hsc:128:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLSetConnectAttr" imp_sqlSetConnectAttr
+          :: SQLHDBC
+             -> SQLINTEGER -> SQLPOINTER -> SQLINTEGER -> IO SQLRETURN
+
+Database\HDBC\ODBC\Api\Imports.hsc:137:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLGetConnectAttr" imp_sqlGetConnectAttr
+          :: SQLHDBC
+             -> SQLINTEGER
+                -> SQLPOINTER -> SQLINTEGER -> Ptr SQLINTEGER -> IO SQLRETURN
+[ 7 of 11] Compiling Database.HDBC.ODBC.Api.Errors ( Database\HDBC\ODBC\Api\Errors.hs, .stack-work\dist\ca59d0ab\build\Database\HDBC\ODBC\Api\Errors.o )
+[ 8 of 11] Compiling Database.HDBC.ODBC.Wrappers ( Database\HDBC\ODBC\Wrappers.hs, .stack-work\dist\ca59d0ab\build\Database\HDBC\ODBC\Wrappers.o )
+[ 9 of 11] Compiling Database.HDBC.ODBC.Statement ( .stack-work\dist\ca59d0ab\build\Database\HDBC\ODBC\Statement.hs, .stack-work\dist\ca59d0ab\build\Database\HDBC\ODBC\Statement.o )
+
+Database\HDBC\ODBC\Statement.hsc:932:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLDescribeCol" sqlDescribeCol
+          :: SQLHSTMT
+             -> Int16
+                -> CString
+                   -> Int16
+                      -> Ptr (Int16)
+                         -> Ptr (Int16)
+                            -> Ptr (Word64) -> Ptr (Int16) -> Ptr (Int16) -> IO Int16
+
+Database\HDBC\ODBC\Statement.hsc:944:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLGetData" sqlGetData
+          :: SQLHSTMT
+             -> Word16 -> Int16 -> CString -> Int64 -> Ptr (Int64) -> IO Int16
+
+Database\HDBC\ODBC\Statement.hsc:953:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLBindCol" sqlBindCol
+          :: SQLHSTMT
+             -> Word16
+                -> Int16 -> Ptr ColBuf -> Int64 -> Ptr (Int64) -> IO Int16
+
+Database\HDBC\ODBC\Statement.hsc:962:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLPrepare" sqlPrepare
+          :: SQLHSTMT -> CString -> Int32 -> IO Int16
+
+Database\HDBC\ODBC\Statement.hsc:966:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLExecute" sqlExecute
+          :: SQLHSTMT -> IO Int16
+
+Database\HDBC\ODBC\Statement.hsc:969:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLNumResultCols" sqlNumResultCols
+          :: SQLHSTMT -> Ptr Int16 -> IO Int16
+
+Database\HDBC\ODBC\Statement.hsc:973:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLRowCount" sqlRowCount
+          :: SQLHSTMT -> Ptr Int32 -> IO Int16
+
+Database\HDBC\ODBC\Statement.hsc:976:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLBindParameter" sqlBindParameter
+          :: SQLHSTMT
+             -> Word16
+                -> Int16
+                   -> Int16
+                      -> Int16
+                         -> Word64 -> Int16 -> CString -> Int64 -> Ptr Int64 -> IO Int16
+
+Database\HDBC\ODBC\Statement.hsc:992:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLDescribeParam" sqlDescribeParam
+          :: SQLHSTMT
+             -> Word16
+                -> Ptr Int16 -> Ptr Word64 -> Ptr Int16 -> Ptr Int16 -> IO Int16
+
+Database\HDBC\ODBC\Statement.hsc:1001:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLFetch" sqlFetch
+          :: SQLHSTMT -> IO Int16
+
+Database\HDBC\ODBC\Statement.hsc:1037:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLNumParams" sqlNumParams
+          :: SQLHSTMT -> Ptr Int16 -> IO Int16
+[10 of 11] Compiling Database.HDBC.ODBC.Connection ( .stack-work\dist\ca59d0ab\build\Database\HDBC\ODBC\Connection.hs, .stack-work\dist\ca59d0ab\build\Database\HDBC\ODBC\Connection.o )
+
+Database\HDBC\ODBC\Connection.hsc:188:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLSetEnvAttr" sqlSetEnvAttr
+          :: SQLHENV -> Int32 -> Ptr () -> Int32 -> IO Int16
+
+Database\HDBC\ODBC\Connection.hsc:192:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLDriverConnect" sqlDriverConnect
+          :: SQLHDBC
+             -> Ptr ()
+                -> CString
+                   -> Int16 -> CString -> Int16 -> Ptr Int16 -> Word16 -> IO Int16
+
+Database\HDBC\ODBC\Connection.hsc:201:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLEndTran" sqlEndTran
+          :: Int16 -> SQLHDBC -> Int16 -> IO Int16
+
+Database\HDBC\ODBC\Connection.hsc:205:1: warning: [-Wunsupported-calling-conventions]
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall safe "static sql.h SQLGetInfo" sqlGetInfo
+          :: SQLHDBC -> Word16 -> Ptr () -> Int16 -> Ptr Int16 -> IO Int16
+[11 of 11] Compiling Database.HDBC.ODBC ( Database\HDBC\ODBC.hs, .stack-work\dist\ca59d0ab\build\Database\HDBC\ODBC.o )
+Installing library in
+D:\HaskellProjects\lab05\.stack-work\install\e580970b\lib\x86_64-windows-ghc-8.0.2\HDBC-odbc-2.5.0.1-KA31QzFcYbcvsxhLlbS2q
+Registering HDBC-odbc-2.5.0.1...
